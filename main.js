@@ -45,3 +45,19 @@ setInterval(() => {
 // Initial display
 showSlide(currentIndex);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.createElement('button');
+    hamburger.classList.add('hamburger');
+    hamburger.innerHTML = '&#9776;';
+    document.querySelector('.navbar-container').insertBefore(hamburger, document.querySelector('.main-nav'));
+
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Keep your existing testimonial carousel code
+});
+
