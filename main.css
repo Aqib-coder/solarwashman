@@ -581,8 +581,13 @@ body {
 /* Navbar Responsiveness */
 @media (max-width: 992px) {
     .navbar-container {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 40%;
     }
 
     .main-nav {
@@ -590,28 +595,8 @@ body {
         display: none;
     }
 
-    .nav-links {
-        flex-direction: column;
-        gap: 15px;
-        display: none;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
     .cta-button {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .hamburger {
-        display: block;
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        margin: 10px 0;
+        width: 20%;
     }
 }
 
