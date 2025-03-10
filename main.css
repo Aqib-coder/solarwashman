@@ -151,12 +151,13 @@ body {
 .slide {
     display: none;
     height: 100%;
+
 }
 
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .hero-text {
