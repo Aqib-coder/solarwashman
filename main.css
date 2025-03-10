@@ -589,7 +589,7 @@ body {
     }
 
     .logo img {
-        width: 40%;
+        width: 60%;
     }
 
     .main-nav {
@@ -610,11 +610,11 @@ body {
     }
 
     .hero-text h1 {
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .hero-text p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .cta-btn {
