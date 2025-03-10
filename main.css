@@ -471,7 +471,7 @@ body {
 
 @media (max-width:992px) {
 
-    .cta-button,
+
     .main-nav {
         display: none
     }
@@ -479,20 +479,28 @@ body {
     .navbar-container {
         flex-direction: row;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
     }
 
     .logo {
-        width: 100%
+        justify-content: start;
+        width: 50%;
     }
 
     .logo img {
-        width: 40%
+        margin: 0px;
+        width: 50%
     }
 
     .cta-button {
-        width: 30%
+        width: 50%
     }
+
+    .hero-text {
+        width: 60%;
+    }
+
+
 }
 
 @media (max-width:768px) {
