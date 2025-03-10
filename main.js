@@ -1,49 +1,11 @@
-// Hero Slideshow
-let slideIndex = 0;
-function showSlides() {
-    const slides = document.getElementsByClassName("slide");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+let slideIndex=0;
+
+function showSlides(){
+    let e=document.getElementsByClassName("slide");
+    for(let l=0;l<e.length;l++)
+        e[l].style.display="none";
+        ++slideIndex > e.length && (slideIndex=1),e[slideIndex-1].style.display="block",setTimeout(showSlides,4e3)
     }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 4000);
-}
-showSlides();
-
-// Testimonials Carousel
-
-document.addEventListener('DOMContentLoaded', () => {
-const slides = document.querySelectorAll('.testimonial-slide');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
-let currentIndex = 0;
-
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-    });
-}
-
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
-    showSlide(currentIndex);
-});
-
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-});
-
-// Auto Slide every 5 seconds
-setInterval(() => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-}, 5000);
-
-// Initial display
-showSlide(currentIndex);
-});
-
+showSlides()
+,document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll(".testimonial-slide"),l=document.querySelector(".prev-btn"),t=document.querySelector(".next-btn"),n=0;function s(l){e.forEach((e,t)=>{e.classList.toggle("active",t===l)})}l.addEventListener("click",()=>{s(n=0===n?e.length-1:n-1)}),t.addEventListener("click",()=>{s(n=(n+1)%e.length)}),setInterval(()=>{s(n=(n+1)%e.length)},5e3),s(n)});
 
