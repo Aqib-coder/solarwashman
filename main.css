@@ -633,19 +633,31 @@ body {
     .service {
         width: 90%;
     }
-}
 
-/* Features Section (Why Choose Us) */
-@media (max-width: 768px) {
     .features-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
+
+/* Features Section (Why Choose Us) */
+
+
 
 @media (max-width: 480px) {
     .features-container {
         grid-template-columns: 1fr;
     }
+
+
+    .hero-text h1 {
+        font-size: 13px;
+    }
+
+    .hero-text p {
+        font-size: 11px;
+    }
+
 }
 
 /* Solar Efficiency Section */
