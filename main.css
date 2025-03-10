@@ -34,7 +34,7 @@ body {
 
 /* Logo */
 .logo {
-    width: 20%;
+    width: 15%;
     overflow: hidden;
     display: flex;
     justify-content: start;
@@ -46,7 +46,7 @@ body {
     width: 100%;
     /* margin-top: -70px;
     margin-bottom: -55px; */
-    margin: -25px auto;
+    margin: 0 auto;
     display: block;
 
 
@@ -184,7 +184,7 @@ body {
 /* Services Section */
 .services-section {
     padding: 50px;
-    background: #f9f9f9;
+    background-color: white;
     text-align: center;
 }
 
@@ -207,18 +207,24 @@ body {
 .solar-efficiency-section {
     display: flex;
     padding: 50px;
-    background: #eaf7ff;
+    background: #eff7fc;
     justify-content: space-between;
 }
 
 .solar-content {
     max-width: 50%;
+
+}
+
+.solar-content h2 {
+    font-size: 32px;
 }
 
 .solar-image {
     width: 45%;
     background-image: url("images/solar.gif");
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -401,8 +407,8 @@ body {
 
 .why-choose-sowash {
     text-align: center;
-    padding: 60px 20px;
-    background-color: #ffffff;
+    padding: 60px 50px;
+    background-color: #eff7fc;
 }
 
 .why-choose-sowash h2 {
@@ -457,8 +463,8 @@ body {
 
 .customer-testimonials {
     text-align: center;
-    padding: 60px 20px;
-    background-color: #f0f8ff;
+    padding: 60px 50px;
+    background-color: white;
 }
 
 .customer-testimonials h2 {
@@ -550,7 +556,7 @@ body {
 }
 
 .about-company {
-    background-color: #fff;
+    background-color: white;
     padding: 60px 20px;
     text-align: left;
 }
@@ -589,7 +595,7 @@ body {
     }
 
     .logo img {
-        width: 60%;
+        width: 40%;
     }
 
     .main-nav {
