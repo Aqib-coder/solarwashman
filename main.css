@@ -646,11 +646,17 @@ body {
     }
 
     .logo {
-        width: 60%;
+        width: 70%;
     }
 
     .cta-button {
-        width: 30%;
+        width: 50%;
+    }
+
+    .btn-quote {
+        padding: 4px 12x;
+        font-size: 12px;
+
     }
 }
 
