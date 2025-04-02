@@ -114,7 +114,8 @@ body {
 
 .slideshow-container {
     height: 100%;
-    position: relative
+    position: relative;
+
 }
 
 .slide {
@@ -125,7 +126,7 @@ body {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: fill
+    object-fit: cover;
 }
 
 .hero-text {
@@ -462,7 +463,7 @@ body {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-color: #FFFFFF
+    background-color: transparent;
 }
 
 .footer-bottom {
